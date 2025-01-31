@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox maxWidth="400.0" minHeight="500.0" prefHeight="500.0" prefWidth="400.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.coursework_ponomarev.Controller">
+    <children>
+        <HBox alignment="BASELINE_LEFT" spacing="10.0">
+            <children>
+                <TextField fx:id="textFieldModel" promptText="Модель" />
+                <ComboBox fx:id="comboBoxCategory" promptText="Категория" />
+                <ComboBox fx:id="comboBoxFuelType" promptText="Тип топлива" />
+                <DatePicker fx:id="datePickerTechInspectionDate" promptText="Дата техосмотра" />
+                <Button fx:id="buttonAdd" mnemonicParsing="false" onAction="#handleAdd" text="Добавить" />
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+        <TableView fx:id="tableView" editable="true" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="columnModel" prefWidth="100.0" text="Модель" />
+                <TableColumn fx:id="columnCategory" prefWidth="75.0" text="Категория" />
+                <TableColumn fx:id="columnFuelType" prefWidth="125.0" text="Тип топлива" />
+                <TableColumn fx:id="columnTechInspectionDate" prefWidth="150.0" text="Дата техосмотра" />
+            </columns>
+        </TableView>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</VBox>
