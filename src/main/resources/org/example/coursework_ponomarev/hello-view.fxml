@@ -6,6 +6,7 @@
 <?import javafx.scene.layout.VBox?>
 <VBox maxWidth="400.0" minHeight="500.0" prefHeight="500.0" prefWidth="400.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.coursework_ponomarev.Controller">
     <children>
+      
         <!-- Поле для ввода данных о владельце -->
         <HBox alignment="BASELINE_LEFT" spacing="10.0">
             <children>
@@ -39,6 +40,8 @@
         <!-- Остальные ваши поля ввода -->
         <HBox alignment="BASELINE_LEFT" spacing="10.0">
             <children>
+                <Label text="Коробка передач:" />
+                <ComboBox fx:id="transmissionComboBox" promptText="Выберите коробку передач" />
                 <TextField fx:id="modelField" promptText="Модель" />
                 <ComboBox fx:id="categoryComboBox" promptText="Категория" />
                 <TextField fx:id="fuelTypeField" promptText="Тип топлива" />
