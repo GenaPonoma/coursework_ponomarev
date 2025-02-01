@@ -1,4 +1,4 @@
-package org.example.coursework_ponomarev;
+package org.example.coursework_ponomarev.model;
 
 public class IndividualOwner implements Owner {
     private String name;

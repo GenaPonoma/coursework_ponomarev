@@ -1,11 +1,9 @@
-package org.example.coursework_ponomarev;
+package org.example.coursework_ponomarev.model;
 
 import java.time.LocalDate;
 
 public class Truck extends Vehicle {
     private String transmission;
-
-
     public Truck(String model, String category, String fuelType, LocalDate techInspectionDate, Owner owner, Document document, String transmission) {
         super(model, category, fuelType, techInspectionDate, owner, document);
         this.transmission = transmission;

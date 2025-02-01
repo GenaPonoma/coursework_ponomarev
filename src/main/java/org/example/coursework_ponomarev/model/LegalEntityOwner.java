@@ -1,4 +1,4 @@
-package org.example.coursework_ponomarev;
+package org.example.coursework_ponomarev.model;
 
 public class LegalEntityOwner implements Owner {
     private String companyName;

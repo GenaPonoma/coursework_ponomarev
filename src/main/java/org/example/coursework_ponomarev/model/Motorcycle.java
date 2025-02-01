@@ -1,13 +1,12 @@
-package org.example.coursework_ponomarev;
+package org.example.coursework_ponomarev.model;
 
 import java.time.LocalDate;
 
-public class Car extends Vehicle {
-
+public class Motorcycle extends Vehicle {
     private String transmission;
 
 
-    public Car(String model, String category, String fuelType, LocalDate techInspectionDate, Owner owner, Document document, String transmission) {
+    public Motorcycle(String model, String category, String fuelType, LocalDate techInspectionDate, Owner owner, Document document, String transmission) {
         super(model, category, fuelType, techInspectionDate, owner, document);
         this.transmission = transmission;
     }
@@ -21,6 +20,4 @@ public class Car extends Vehicle {
     public void setTransmission(String transmission) {
         this.transmission = transmission;
     }
-
-
 }
