@@ -2,19 +2,25 @@ package org.example.coursework_ponomarev;
 
 import java.time.LocalDate;
 
-public class Transport {
-    private String model;
-    private String category;
-    private String fuelType;
-    private LocalDate techInspectionDate;
+public abstract class Vehicle {
+    protected String model;
+    protected String category;
+    protected String fuelType;
+    protected LocalDate techInspectionDate;
+    protected Owner owner;
+    protected Document document;
 
     // Конструктор
-    public Transport(String model, String category, String fuelType, LocalDate techInspectionDate) {
+    public Vehicle(String model, String category, String fuelType, LocalDate techInspectionDate, Owner owner, Document document) {
         this.model = model;
         this.category = category;
         this.fuelType = fuelType;
         this.techInspectionDate = techInspectionDate;
+        this.owner = owner;
+        this.document = document;
     }
+
+
 
     // Геттеры и сеттеры
     public String getModel() { return model; }
@@ -28,4 +34,11 @@ public class Transport {
 
     public LocalDate getTechInspectionDate() { return techInspectionDate; }
     public void setTechInspectionDate(LocalDate techInspectionDate) { this.techInspectionDate = techInspectionDate; }
+
+    public Owner getOwner() { return owner; }
+    public void setOwner(Owner owner) { this.owner = owner; }
+
+    public Document getDocument() { return document; }
+    public void setDocument(Document document) { this.document = document; }
+
 }

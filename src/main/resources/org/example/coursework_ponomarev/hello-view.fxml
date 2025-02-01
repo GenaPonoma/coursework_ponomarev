@@ -6,13 +6,44 @@
 <?import javafx.scene.layout.VBox?>
 <VBox maxWidth="400.0" minHeight="500.0" prefHeight="500.0" prefWidth="400.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.coursework_ponomarev.Controller">
     <children>
+        <!-- Поле для ввода данных о владельце -->
         <HBox alignment="BASELINE_LEFT" spacing="10.0">
             <children>
-                <TextField fx:id="textFieldModel" promptText="Модель" />
-                <ComboBox fx:id="comboBoxCategory" promptText="Категория" />
-                <ComboBox fx:id="comboBoxFuelType" promptText="Тип топлива" />
-                <DatePicker fx:id="datePickerTechInspectionDate" promptText="Дата техосмотра" />
-                <Button fx:id="buttonAdd" mnemonicParsing="false" onAction="#handleAdd" text="Добавить" />
+                <ComboBox fx:id="categoryOwnerComboBox" promptText="Категория владельца" />
+                <Label text="Имя владельца:" />
+                <TextField fx:id="ownerNameField" promptText="Введите имя владельца" />
+                <Label text="Адрес владельца:" />
+                <TextField fx:id="ownerAddressField" promptText="Введите адрес владельца" />
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+
+        <!-- Поле для ввода данных о документе -->
+        <HBox alignment="BASELINE_LEFT" spacing="10.0">
+            <children>
+
+                <Label text="Номер документа:" />
+                <TextField fx:id="documentNumberField" promptText="Введите номер документа" />
+                <Label text="Дата выдачи:" />
+                <DatePicker fx:id="issueDatePicker" promptText="Выберите дату выдачи" />
+                <Label text="Срок действия до:" />
+                <DatePicker fx:id="expirationDatePicker" promptText="Выберите срок действия" />
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+
+        <!-- Остальные ваши поля ввода -->
+        <HBox alignment="BASELINE_LEFT" spacing="10.0">
+            <children>
+                <TextField fx:id="modelField" promptText="Модель" />
+                <ComboBox fx:id="categoryComboBox" promptText="Категория" />
+                <TextField fx:id="fuelTypeField" promptText="Тип топлива" />
+                <DatePicker fx:id="techInspectionDatePicker" promptText="Дата техосмотра" />
+                <Button fx:id="registerButton" mnemonicParsing="false" onAction="#registerVehicle" text="Добавить" />
             </children>
             <padding>
                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
