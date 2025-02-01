@@ -2,12 +2,13 @@ package org.example.coursework_ponomarev;
 
 import java.time.LocalDate;
 
-public class Document {
+public class Document  {
     private String documentNumber;
     private LocalDate issueDate;
     private LocalDate expirationDate;
 
     public Document(String documentNumber, LocalDate issueDate, LocalDate expirationDate) {
+        super();
         this.documentNumber = documentNumber;
         this.issueDate = issueDate;
         this.expirationDate = expirationDate;

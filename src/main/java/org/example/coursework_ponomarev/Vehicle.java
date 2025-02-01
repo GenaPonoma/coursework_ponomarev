@@ -2,7 +2,7 @@ package org.example.coursework_ponomarev;
 
 import java.time.LocalDate;
 
-public abstract class Vehicle {
+public  class Vehicle {
     protected String model;
     protected String category;
     protected String fuelType;
